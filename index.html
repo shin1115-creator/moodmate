@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MoodMate - 気分改善日記 -</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="logo">🙂</span>
+      <div class="titles">
+        <h1 class="title">MoodMate</h1>
+        <small class="subtitle">気分改善日記</small>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#/log" data-route>記録</a>
+      <a href="#/history" data-route>履歴</a>
+      <a href="#/actions" data-route>アクション</a>
+      <a href="#/settings" data-route>設定</a>
+    </nav>
+  </header>
+
+  <main id="app" tabindex="-1" aria-live="polite"></main>
+
+  <footer class="site-footer">
+    <small>© MoodMate</small>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./storage.js"></script>
+  <script src="./actions.js"></script>
+  <script src="./components/toast.js"></script>
+  <script src="./components/chart.js"></script>
+  <script src="./views/log.js"></script>
+  <script src="./views/history.js"></script>
+  <script src="./views/actionsView.js"></script>
+  <script src="./views/settings.js"></script>
+  <script src="./router.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
